@@ -1,0 +1,16 @@
+{application, erlmachine_eip,
+ [
+  {description, "Erlmachine extensions to implement EIP"},
+  {vsn, "1.0.0"},
+  {modules, []},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib,
+                  erlmachine
+                 ]},
+  {env, []},
+
+  {licenses, ["apache-2.0"]},
+  {links, [{"Github", "https://github.com/Erlmachine/erlmachine_eip"}]}
+ ]}.
