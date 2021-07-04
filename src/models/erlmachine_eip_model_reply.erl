@@ -30,7 +30,7 @@ process(_UID, Motion, State) ->
 
             erlmachine:success(State);
         Pid when is_pid(Pid) ->
-            erlang:send(Address, Motion),
+            Id = erlmachine:correlation_id(Motion), erlang:send(Address, {Id, Motion}),
 
             erlmachine:success(State)
     catch E:R ->
