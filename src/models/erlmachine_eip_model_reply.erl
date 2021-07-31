@@ -14,7 +14,7 @@
 
 -type state() :: map().
 
--spec startup(UID::uid(), State::state(), Opt::list(), Env::map()) ->
+-spec startup(UID::uid(), State::state(), Opt::map(), Env::map()) ->
                      success(state()) | failure(term(), term(), state()).
 startup(_UID, State, _Opt, _Env) ->
     erlmachine:success(State).
