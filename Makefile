@@ -4,6 +4,6 @@ PROJECT_VERSION = 1.0.0
 
 DEPS = erlmachine
 
-dep_erlmachine = git https://github.com/Erlmachine/erlmachine
+dep_erlmachine = git https://github.com/erlmachine/erlmachine
 
 include erlang.mk
